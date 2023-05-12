@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/styles/styles.css">
+    <title>Formulário de Agendamento</title>
+</head>
+<body>
+    <div class="page">
+        <header>
+            <div class="header">
+                <h1>Agende o seu serviço</h1>
+                <p>Primeiro, preencha o formulário com os dados solicitados:</p>
+            </div>
+        </header>
+        <form action="" method="post">
+            <fieldset>
+                <div class="fieldset-box">
+                    <legend>Agendamento</legend>
+
+                    <div class="input-box">
+                        <label for="user-name">Nome completo <span>(mínimo de 8 caractres)</span></label>
+                        <input type="text" name="user-name" id="user-name" required/>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="user-contact">Whatsapp para contato<span>(somente números)</span></label>
+                        <input type="number" name="user-contact" id="user-contact" required/>
+                    </div>
+                    
+                    <div class="input-box">
+                        <label for="user-service">Serviço</span></label>
+                        <select name="user-service" id="user-service">
+                            <option value="hair">Cabelo</option>
+                            <option value="hair_and_beard">Cabelo e barba</option>
+                            <option value="hair_and_beard_eyebrow">Cabelo, barba e sombrancelha</option>
+                            <option value="beard">Barba</option>
+                        </select>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="user-extra">Informações extras</label>
+                        <textarea name="user-extra" id="user-extra" cols="30" rows="10"></textarea>
+                    </div>
+
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <div class="fieldset-box">
+                    <div class="input-box">
+                        <div class="payment">
+                            <legend>Pagamento</legend>
+                            <select name="user-payment" id="user-payment">
+                                <option value="credit">Cartão de crédito</option>
+                                <option value="debit">Cartão de débito</option>
+                                <option value="money">Dinheiro</option>
+                                <option value="pix">Pix</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+        
+            <fieldset>
+                <div class="fieldset-box">
+                    <legend>Horário do agendamento</legend>
+                    <div class="date">
+                        <div class="input-box">
+                            <label for="user-date">Dia</span></label>
+                            <input type="date" name="user-date" id="user-dates" required/>
+                        </div>
+                        <div class="input-box">
+                            <label for="user-hour">Horário</label>
+                            <input type="time" name="user-hour" id="user-hour" required/>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>
