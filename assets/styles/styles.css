@@ -51,7 +51,7 @@ form{
     margin-top: 38px;
     background-color: #fafafc;
     min-height: 300px;
-    border-radius: 8px;
+    border-radius: 8px 8px 0px 0px;
 
     padding: 64px; 
     display: flex;
@@ -165,4 +165,33 @@ fieldset legend{
     display: flex;
     flex-direction: column;
     width: 100%;
+}
+footer{
+    background-color: #f0f0f4;
+    height: 136px;
+
+    border-radius: 0 0 8px 8px;
+    border-top:  1px solid #d6d6d6;
+    margin-bottom: 100px;
+    padding: 40px 64px;
+    display: flex;
+    flex-direction: column;
+}
+
+footer input{
+    width: 608px;
+    height: 56px;
+    background-color: #1bcf1b;
+    color: #fff;
+
+    font-family: 'Archivo', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    border: none;
+    border-radius: 10px;
+}
+
+footer input:hover{
+    background-color: #12af12;
+    transition-duration: 0.3s;
 }
