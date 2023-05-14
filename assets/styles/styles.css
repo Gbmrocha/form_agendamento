@@ -195,3 +195,8 @@ footer input:hover{
     background-color: #12af12;
     transition-duration: 0.3s;
 }
+
+
+input:invalid{
+    border: 1px #ff1010;
+}
